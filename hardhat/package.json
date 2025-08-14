@@ -1,0 +1,22 @@
+{
+  "name": "crypto-trading-dapp-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for crypto trading DApp",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:simple": "hardhat run scripts/deploy-simple.js --network localhost"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "dotenv": "^16.4.4",
+    "ethers": "^6.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "ethers": "^6.0.0",
+    "hardhat": "^2.19.5"
+  }
+}

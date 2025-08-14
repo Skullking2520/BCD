@@ -1,0 +1,29 @@
+{
+  "name": "crypto-trading-dapp",
+  "version": "1.0.0",
+  "description": "Decentralized cryptocurrency trading application",
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm run dev",
+    "hardhat": "cd hardhat && npx hardhat node",
+    "test": "cd hardhat && npx hardhat test",
+    "dev": "node start-dev.js",
+    "dev:simple": "node start-simple.js",
+    "dev:working": "node start-working.js",
+    "dev:frontend": "node start-frontend-only.js",
+    "fix": "node fix-deployment.js",
+    "fix:simple": "node fix-simple.js",
+    "fix:final": "node fix-final.js",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ../hardhat && npm install",
+    "setup": "npm run install:all && cd hardhat && npm run compile",
+    "deploy": "cd hardhat && npm run deploy",
+    "compile": "cd hardhat && npm run compile"
+  },
+  "workspaces": [
+    "frontend",
+    "backend",
+    "hardhat"
+  ],
+  "author": "",
+  "license": "MIT"
+} 
