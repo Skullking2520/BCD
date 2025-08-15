@@ -60,7 +60,7 @@ An end-to-end game item exchange DApp using ERC-721/1155, EIP-712 gasless listin
 ## 3) Feature → Tool Mapping
 
 | Feature                               | Where                                                        | Tools used                              | Notes                                                       |
-| ------------------------------------- | ------------------------------------------------------------ | --------------------------------------- | ----------------------------------------------------------- | -------------------------------------- |
+| ------------------------------------- | ------------------------------------------------------------ | --------------------------------------- | ----------------------------------------------------------- |
 | Wallet connect (non-custodial)        | `frontend/*`                                                 | RainbowKit, Wagmi, EIP-1193             | Multi-wallet UI, signer for EIP-712/tx                      |
 | EIP-712 gasless listing & cancel      | `frontend/lib/*`, `backend/src/routes/*`                     | Wagmi/viem (signTypedData), Express, DB | Client signs typed data → API; no on-chain write until fill |
 | On-chain settlement (buy/bid/fulfill) | `frontend/components/*`, `hardhat/contracts/Marketplace.sol` | viem/ethers, Solidity, Hardhat          | Verify EIP-712 digest, atomic transfers                     |
